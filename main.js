@@ -2,8 +2,12 @@ var input = require('fs').readFileSync('data/Waescher_TEST0084.txt', 'utf8');
 
 var lines = input.split('\n'); 
 
+/*
+Para demandas definidas descomentar essa linha 
+e desativar a outra
 var tamanho = parseInt(lines[1]);
-
+*/
+var tamanho = 10000
 
 const demanda = require('./demanda')
 const quantidadeAbelhas = 30

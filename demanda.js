@@ -14,6 +14,19 @@ var TamanhoItem = [], NumItem = [];
 
 const demanda = []
 
+//Demanda Randomica
+for (let i = 0; i < getRandomIntInclusive(40, 100); i++) {
+  demanda.push(
+    {
+      tamanho: getRandomIntInclusive(287, 7500),
+      quantidade: getRandomIntInclusive(20, 21),
+      completo: 0
+    }
+  )
+}
+
+/*
+Demanda Definida por arquivo
 for (let i = 2; i < lines.length-1; i++) {
 
     [TamanhoItem[i-2], NumItem[i-2]] = lines[i].split('	');
@@ -29,20 +42,6 @@ for (let i = 2; i < lines.length-1; i++) {
       }
     )
 }
-
-
-
-
-
-/*
-for (let i = 0; i < getRandomIntInclusive(26, 28); i++) {
-  demanda.push(
-    {
-      tamanho: getRandomIntInclusive(287, 7500),
-      quantidade: getRandomIntInclusive(20, 21),
-      completo: 0
-    }
-  )
-}
 */
+
 module.exports = demanda;
